@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drawing-to-3d-agent"
+version = "0.1.0"
+description = "Generate faceted STL and OBJ meshes from top and side drawing silhouettes."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "Pillow>=10.0",
+  "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+
+[project.scripts]
+draw3d-agent = "drawing_to_3d_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["drawing_to_3d_agent*"]

@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+outputs/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+# Obsolete generated examples from the removed five-view experiment.
+examples/shoe_*.png
